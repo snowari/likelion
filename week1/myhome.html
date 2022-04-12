@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/099ec369e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -53,142 +55,6 @@
     <title>Hello!</title>
 </head>
 <body>
-    <style>
-        *{
-            font-family: 'Noto Sans KR', sans-serif;
-            font-family: 'Raleway', sans-serif;
-            list-style: none;
-            text-decoration: none;
-            border-collapse: collapse;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .intro_bg{
-            background-image: url("img/background_extend2.jpg");
-            width: 1920px;
-            height: 718px;
-        }
-
-        .intro_bar{
-            position: relative;
-            top: -66px;
-            display: flex;
-            width: 1200px;
-            background: #fff;
-            margin: auto;
-            box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
-        }
-
-        .intro_bar> li {
-            flex: 1;
-            height: 132px;
-            
-        }
-
-        .intro_bar>li :hover{
-            opacity: 0.5;
-        }
-
-        .intro_bar > li > div {
-            text-align: center;
-            margin-top: 50px;
-            height: 40px;
-        }
-
-        .intro_bar>li:not(:last-child)>div{
-            border-right: 1px solid gray;
-
-        }
-
-        .contents_font1{
-            font-size: 20px;
-        }
-
-        a:link, a:visited{
-            text-decoration: none;
-            color: black;
-        }
-
-        .main_text0{
-            width: 100%;
-            height: 600px;
-            margin-top: -132px;
-            background-color: #fff;
-        }
-        
-        .main_text0 > h1 {
-            margin-top: 180px;
-            text-align: center;
-        }
-
-        .main_text0 > .contents_font1{
-            text-align: center;
-        }
-
-        .main_contents1{
-            display: flex;
-            width: 1280px;
-            height: 302px;
-            margin: auto;
-        }
-
-        .main_contents1 > li {
-            flex: 1;
-            height: 302px;
-            margin-top: 50px;
-            background-color: white; 
-            text-align: center;
-
-        }
-
-        .main_contents1 > li > .main_img {
-            margin: auto;
-        }
-
-        .main_contents1 > li :not(:last-child){
-            margin-right: 20px;
-        }
-
-        .main_contents1 > li > div {
-            filter: drop-shadow(0px 0px 10px rgb(0,0,0,0.3));
-        }
-
-        .main_text1 {
-            width: 100%;
-            height: 660px;
-        }
-        .main_text1 > h1 {
-            padding-top: 50px;
-            text-align: center;
-        }
-
-       .theme1{
-           width: 1280px;
-           display: flex;
-           margin: 30px auto;
-           height: 427px;
-       }
-
-       .theme1 > .contents_font2 {
-           padding: 20px;
-       }
-
-       .theme2{
-           width: 1280px;
-           display: flex;
-           margin: 30px auto;
-           height: 427px;
-       }
-
-       .theme2 > .contents_font2 {
-           padding: 10px;
-           padding-left: 20px;
-       }
-
-
-        
-    </style>
 
     <div class="intro_bg">
     </div>
@@ -205,7 +71,7 @@
 
         <ul class="main_contents1">
         <li><div class="main_img">
-            <img src="img/main1.jpg" width="300" height="300">
+               <img id="main1" src="img/main1.jpg" width="300" height="300">
         </div></li>
         <li><div class="main_img">
             <img src="img/main2.jpg" width="300" height="300">
@@ -222,7 +88,7 @@
         </h1>
         <div class="theme1">
             <div class="theme1_img">
-                <img src="img/theme1.jpg" width="640" height="426">
+                <img id="change1" src="img/theme1.jpg" width="640" height="426">
             </div>
             <div class="contents_font2">
                  NAME : 박은서
@@ -251,7 +117,7 @@
         </h1>
         <div class="theme2">
             <div class="theme2_img">
-                <img src="img/theme2.jpg" width="640" height="426">
+                <img id = "change2" src="img/theme2.jpg" width="640" height="426">
             </div>
             <div class="contents_font2">
                 <h4>
@@ -277,5 +143,105 @@
         </div>
     </div>
 
+    <div class = "slideWrapper">
+        <ul class="slides">
+            <li><img src="img/slide1.jpg" width="300px"></li>
+            <li><img src="img/slide2.jpg"width="300px"></li>
+            <li><img src="img/slide3.jpg"width="300px"></li>
+            <li><img src="img/slide4.jpg"width="300px"></li>
+            <li><img src="img/slide5.jpg"width="300px"></li>
+            <li><img src="img/slide6.jpg"width="300px"></li>
+            <li><img src="img/slide7.jpg"width="300px"></li>
+            <li><img src="img/slide8.jpg"width="300px"></li>
+            <li><img src="img/slide9.jpg"width="300px"></li>
+        </ul>
+    </div>
+    <p class="controls">
+        <span class="prev">◀ prev</span>
+        <span class="next">next ▶</span>
+    </p>
+
+    <div class = "darkMode">
+        <input type = "checkbox" class="checkbox" id = "checkbox">
+        <label for="checkbox" class="label">
+            <i class = "fas fa-moon"></i>
+            <i class = "fas fa-sun"></i>
+            <div class = "ball"></div>
+        </label>
+    </div>
+
+
+<script>
+    let slides = document.querySelector('.slides');
+    let slide = document.querySelectorAll('.slides > li');
+    let currentIdx =  0;
+    let slideCount = slide.length;
+    let prevBtn = document.querySelector('.prev');
+    let nextBtn = document.querySelector('.next');
+    let slideWidth = 300;
+    let slideMargin = 30;
+
+    slides.style.width = (slideMargin + slideWidth)*slideCount - slideMargin + 'px';
+
+    function moveSlide(num){
+        slides.style.left = -num * 340 + 'px';
+        currentIdx = num;
+    }
+
+    nextBtn.addEventListener('click', function(){
+        if(currentIdx < slideCount -4){
+            moveSlide(currentIdx + 1);
+        }else{
+            moveSlide(0);
+        }
+    });
+
+    prevBtn.addEventListener('click', function(){
+        if(currentIdx > 0 ){
+            moveSlide(currentIdx -1);
+        }else{
+            moveSlide(slideCount -4);
+        }
+    });
+
+    let oriImg1 = document.getElementById('change1');
+    let cnt1 =0;
+   oriImg1.addEventListener('click',function(){
+       if(cnt1==0){
+        oriImg1.src = "img/changeimg1.png"
+        cnt1++;
+       }else{
+        oriImg1.src = "img/theme1.jpg"
+        cnt1--;
+       }
+
+   });
+
+   let oriImg2 = document.getElementById('change2');
+    let cnt2 =0;
+   oriImg2.addEventListener('click',function(){
+       if(cnt2==0){
+        oriImg2.src = "img/changeimg2.png"
+        cnt2++;
+       }else{
+        oriImg2.src = "img/theme2.jpg"
+        cnt2--;
+       }
+
+   });
+
+   let checkbox = document.getElementById('checkbox');
+
+   checkbox.addEventListener('change',()=>{
+        document.body.classList.toggle('dark');
+   });
+
+
+   
+
+
+</script>
+
 </body>
+
 </html>
