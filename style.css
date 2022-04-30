@@ -1,0 +1,221 @@
+
+        *{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            list-style: none;
+            text-decoration: none;
+            border-collapse: collapse;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+       
+
+        body{
+            transition: background 0.2s linear;
+        }
+        
+        body.dark{
+            background-color:#302d2d ;
+            color: #fff;
+        }
+
+        .intro_bg{
+            background-image: url("img/background_extend2.jpg");
+            width: 1920px;
+            height: 718px;
+        }
+
+        .intro_bar{
+            position: relative;
+            top: -66px;
+            display: flex;
+            width: 1200px;
+            background: #fff;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
+        }
+
+        .intro_bar> li {
+            flex: 1;
+            height: 132px;
+            
+        }
+
+        .intro_bar>li :hover{
+            opacity: 0.5;
+        }
+
+        .intro_bar > li > div {
+            text-align: center;
+            margin-top: 50px;
+            height: 40px;
+        }
+
+        .intro_bar>li:not(:last-child)>div{
+            border-right: 1px solid gray;
+
+        }
+
+        .contents_font1{
+            font-size: 20px;
+        }
+
+        a:link, a:visited{
+            text-decoration: none;
+            color: black;
+        }
+
+        .main_text0{
+            width: 100%;
+            height: 600px;
+            margin-top: -132px;
+            
+        }
+        
+        .main_text0 > h1 {
+            margin-top: 180px;
+            text-align: center;
+        }
+
+        .main_text0 > .contents_font1{
+            text-align: center;
+        }
+
+        .main_contents1{
+            display: flex;
+            width: 1280px;
+            height: 302px;
+            margin: auto;
+        }
+
+        .main_contents1 > li {
+            flex: 1;
+            height: 302px;
+            margin-top: 50px;
+            text-align: center;
+
+        }
+
+        .main_contents1 > li > .main_img {
+            margin: auto;
+        }
+
+        .main_contents1 > li :not(:last-child){
+            margin-right: 20px;
+        }
+
+        .main_contents1 > li > div {
+            filter: drop-shadow(0px 0px 10px rgb(0,0,0,0.3));
+        }
+
+        .main_text1 {
+            width: 100%;
+            height: 660px;
+        }
+        .main_text1 > h1 {
+            padding-top: 50px;
+            text-align: center;
+        }
+
+       .theme1{
+           width: 1280px;
+           display: flex;
+           margin: 30px auto;
+           height: 427px;
+       }
+
+       .theme1 > .contents_font2 {
+           padding: 20px;
+       }
+
+       .theme2{
+           width: 1280px;
+           display: flex;
+           margin: 30px auto;
+           height: 427px;
+       }
+
+       .theme2 > .contents_font2 {
+           padding: 10px;
+           padding-left: 20px;
+       }
+
+
+       .slideWrapper{
+           position: relative;
+           width: 960px;
+           margin:  0 auto;
+           height: 300px;
+           overflow: hidden;
+       }
+
+       .slides{
+           position: absolute;
+           left:0;
+           top:0;
+           transition: left 0.5s ease-out;
+       }
+
+       .slides > li:not(:last-child){
+           float: left;
+           margin-right:30px;
+       }
+
+       .controls{
+           text-align: center;
+           margin-top: 30px;
+       }
+
+       .controls > span {
+           padding: 10px 20px;
+           margin: 0 10px;
+       }
+
+       .checkbox{
+           opacity: 0; 
+       }
+
+
+      .label{
+          margin-left:95% ;
+          width: 50px;
+          height: 26px;
+          background-color: #111;
+          display: flex;
+          border-radius: 50px;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          padding: 5px;
+          height: 26px;
+          transform: scale(1.5);
+      }
+
+      .fa-moon{
+          color : #f1c40f;
+      }
+
+      .fa-sun{
+          color: #f39c12;
+      }
+
+      .ball{
+          background-color: #fff;
+          position: absolute;
+          height: 22px;
+          width: 22px;
+          top: 2px;
+          left: 2px;
+          border-radius: 50%;
+          transition: transform 0.2s linear;
+
+      }
+
+      .checkbox:checked + .label .ball{
+        transform: translateX(24px);
+    }
+
+        
+
