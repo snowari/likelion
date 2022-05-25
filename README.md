@@ -1,4 +1,4 @@
-#likelion week6 assignmen
+# likelion week6 assignment 
 잘못 여기로 올라와졌는데,,
 다시 올리려니 오류가 나서 일단 여기 레포지토리로 링크 올립니다 ㅠㅠ
 
